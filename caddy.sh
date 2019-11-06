@@ -20,7 +20,10 @@ domain
     websocket
     header_upstream -Origin
   }
-  redir https://www.ofca.gov.hk/index.html
+  redir { 
+    if {path} not /one
+    to https://www.ofca.gov.hk/index.html
+  } 
 }
 
 EOF
