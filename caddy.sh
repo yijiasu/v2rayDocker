@@ -14,7 +14,7 @@ domain
 {
   log ./caddy.log
   tls {
-    protocol tls1.3
+    protocols tls1.3
   }
   proxy /one :2333 {
     websocket
