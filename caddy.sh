@@ -20,6 +20,7 @@ domain
     websocket
     header_upstream -Origin
   }
+  redir https://www.ofca.gov.hk/index.html
 }
 
 EOF
